@@ -46,7 +46,91 @@ body {
 	color: #000000;
 }
 
+.container {
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.header {
+}
+.main-navigation {
+}
+.navigation-list {
+}
+.list-item-left {
+}
+.navigation-logo {
+}
+.visually-hidden {
+}
+.list-item-right {
+}
+.main {
+}
+.main-logo {
+}
+.main-features {
+}
+.main-features-title {
+}
+.main-features-text {
+}
+.feature {
+}
+.feature-card {
+}
+.card-title {
+}
+.card-num {
+}
+.card-text {
+}
+.feature-img {
+}
+.features-block {
+}
+.card-icon {
+}
+.main-hotels {
+}
+.hotels-title {
+}
+.hotels-subtitle {
+}
+.hotels-btn {
+}
+.form-wrapper {
+}
+.form {
+}
+.form-line {
+}
+.line-label {
+}
+.line-input {
+}
+.line-div {
+}
+.submit-btn {
+}
+.map {
+}
+.footer {
+}
+.footer-contacts {
+}
+.contacts-text {
+}
+.contacts-tel {
+}
+.footer-socials {
+}
+.footer-author {
+}
+.author-text {
+}
+.author-name {
 }
