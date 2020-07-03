@@ -8,6 +8,22 @@
 	6. Разное
 */
 
+@font-face {
+	font-family: "ptsans";
+	src: url(../fonts/ptsans.woff);
+	src: url(../fonts/ptsans.woff2);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ptsansbold";
+	src: url(../fonts/ptsansbold.woff);
+	src: url(../fonts/ptsansbold.woff2);
+	font-style: normal;
+	font-weight: bold;
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
@@ -39,14 +55,20 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "ptsans", Arial, sans-serif, "ptsansbold", Arial, sans-serif;
+	font-family: "ptsansbold", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #000000;
+
+	background-color: #f0f0f0;
 }
 
 .container {
+	margin: 0 45px;
+
+	background-color: #ffffff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -55,17 +77,58 @@ img {
 }
 
 .header {
+	width: 100%;
+	height: 60px;
 }
+
 .main-navigation {
+	height: 100%;
 }
+
 .navigation-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	font-family: "ptsansbold", Arial, sans-serif;
+	text-transform: uppercase;
+
+	list-style: none;
 }
+
+.navigation-list a {
+	color: #000000;
+
+	text-decoration: none;
+}
+
+.navigation-logo {
+	position: relative;
+
+	width: 170px;
+	height: 100%;
+}
+
+.navigation-logo::after {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+
+	width: 140px;
+	height: 72px;
+
+	background-image: url(../img/icon/logo.png);
+
+	content: "";
+}
+
 .list-item-left {
 }
-.navigation-logo {
-}
-.visually-hidden {
-}
+
 .list-item-right {
 }
 .main {
