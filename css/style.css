@@ -12,7 +12,6 @@
 	font-family: "ptsans";
 	src: url(../fonts/ptsans.woff);
 	src: url(../fonts/ptsans.woff2);
-	font-style: normal;
 	font-weight: normal;
 }
 
@@ -20,7 +19,6 @@
 	font-family: "ptsansbold";
 	src: url(../fonts/ptsansbold.woff);
 	src: url(../fonts/ptsansbold.woff2);
-	font-style: normal;
 	font-weight: bold;
 }
 
@@ -55,10 +53,11 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "ptsansbold", Arial, sans-serif;
+	font-family: "ptsans", Arial, sans-serif;
 	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
 	line-height: 24px;
-	font-weight: 700;
 	color: #000000;
 
 	background-color: #f0f0f0;
@@ -94,7 +93,6 @@ img {
 	height: 100%;
 
 	font-family: "ptsansbold", Arial, sans-serif;
-	text-transform: uppercase;
 
 	list-style: none;
 }
@@ -114,17 +112,19 @@ img {
 
 .navigation-logo::after {
 	position: absolute;
-	left: 500px;
+	left: 0;
 	top: 0;
-	transform: translate(-500px, 0);
 
-	width: 140px;
+	width: 170px;
 	height: 72px;
 
 	background-image: url(../img/icon/logo.png);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: contain;
 
 	z-index: 9;
-	content: "";
+	content: '';
 }
 
 .list-item-left {
@@ -228,11 +228,27 @@ img {
 }
 
 .main-features {
+	margin: 0;
+	padding: 40px 0;
 }
+
 .main-features-title {
+	margin-bottom: 30px;
+
+	font-family: "ptsansbold", Arial, sans-serif;
+	font-size: 22px;
+	line-height: 24px;
+	text-align: center;
 }
+
 .main-features-text {
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+
+	text-align: center;
 }
+
 .feature {
 }
 .feature-card {
