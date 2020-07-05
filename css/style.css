@@ -326,13 +326,13 @@ img {
 .features-block:last-of-type {
 	align-items: center;
 	height: 260px;
-	
+
 	background-color: #e9e9e9;
 }
 
 .features-block:last-of-type .card-num::after,
-.features-block:last-of-type .card-num::before  {
-	background:black;
+.features-block:last-of-type .card-num::before {
+	background: black;
 }
 
 .features-block .feature-card {
@@ -341,7 +341,7 @@ img {
 	margin-top: 70px;
 	height: 150px;
 	width: 300px;
-	
+
 	color: black;
 }
 
@@ -360,29 +360,139 @@ img {
 }
 
 .main-hotels {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: 260px;
 }
+
 .hotels-title {
+	margin-top: 0px;
+
+	font-family: "ptsansbold", Arial, sans-serif;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
 }
+
 .hotels-subtitle {
+	text-align: center;
+	margin-top: 5px;
 }
+
 .hotels-btn {
+	position: relative;
+	bottom: 0;
+
+	margin-top: 45px;
+	height: 90px;
+	width: 570px;
+
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "ptsansbold", Arial, sans-serif;
+
+	background-color: #766357;
+
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
+
 .form-wrapper {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 }
+
 .form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+	width: 570px;
+
+	font-family: "ptsansbold", Arial, sans-serif;
+
+	background-color: white;
 }
+
 .form-line {
+	margin-bottom: 40px;
 }
+
+.form-line:last-of-type {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
 .line-label {
+	display: inline-block;
+	width: 110px;
 }
+
+.line-div:last-of-type .line-label {
+	text-align: center;
+}
+
 .line-input {
+	position: relative;
+	padding: 5px 10px;
+	height: 40px;
+	width: 355px;
+	border: none;
+
+	background-color: #ebebeb;
 }
-.line-div {
+
+.form-line:last-of-type .line-input {
+	width: 120px;
 }
+
+.line-input[type="date"]::-webkit-calendar-picker-indicator {
+	height: 20px;
+	width: 20px;
+
+	background-image: url(../img/icon/calendar.svg);
+
+	cursor: pointer;
+}
+
+.line-div .line-input {
+	text-align: center;
+}
+
 .submit-btn {
+	height: 50px;
+	width: 100%;
+
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: "ptsansbold", Arial, sans-serif;
+
+	background-color: #81b3d2;
+
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
-.map {
+
+.main-map {
+	position: relative;
+
+	height: 500px;
+
+	background-image: url("../img/main/map.jpg");
+	background-position: center;
 }
+
 .footer {
 }
 .footer-contacts {
