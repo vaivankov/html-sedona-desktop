@@ -251,7 +251,7 @@ img {
 
 	background-color: #81b3d2;
 
-	height: 260px;
+	height: 255px;
 }
 
 .feature-card {
@@ -366,11 +366,11 @@ img {
 	flex-direction: column;
 	align-items: center;
 
-	height: 260px;
+	height: 250px;
 }
 
 .hotels-title {
-	margin-top: 0px;
+	margin-top: 10px;
 
 	font-family: "ptsansbold", Arial, sans-serif;
 	text-align: center;
@@ -380,15 +380,14 @@ img {
 
 .hotels-subtitle {
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 0px;
 }
 
 .hotels-btn {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 
-	margin-top: 45px;
-	height: 90px;
+	height: 85px;
 	width: 570px;
 
 	color: white;
@@ -414,7 +413,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 50px;
+	padding: 55px;
 	width: 570px;
 
 	font-family: "ptsansbold", Arial, sans-serif;
@@ -423,7 +422,7 @@ img {
 }
 
 .form-line {
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 
 .form-line:last-of-type {
@@ -444,15 +443,15 @@ img {
 .line-input {
 	position: relative;
 	padding: 5px 10px;
-	height: 40px;
-	width: 355px;
+	height: 35px;
+	width: 345px;
 	border: none;
 
 	background-color: #ebebeb;
 }
 
 .form-line:last-of-type .line-input {
-	width: 120px;
+	width: 110px;
 }
 
 .line-input[type="date"]::-webkit-calendar-picker-indicator {
@@ -469,7 +468,7 @@ img {
 }
 
 .submit-btn {
-	height: 50px;
+	height: 60px;
 	width: 100%;
 
 	color: white;
@@ -487,25 +486,44 @@ img {
 .main-map {
 	position: relative;
 
-	height: 500px;
+	height: 475px;
 
 	background-image: url("../img/main/map.jpg");
 	background-position: center;
 }
 
 .footer {
+	display: flex;
+	height: 100px;
 }
+
 .footer-contacts {
 }
+
 .contacts-text {
 }
+
 .contacts-tel {
 }
+
 .footer-socials {
 }
+
+.footer-socials img {
+}
+
+.footer-socials a {
+	height: 40px;
+	width: 40px;
+	
+	background: #81b3d2;
+}
+
 .footer-author {
 }
+
 .author-text {
 }
+
 .author-name {
 }
