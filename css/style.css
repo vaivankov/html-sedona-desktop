@@ -318,9 +318,47 @@ img {
 }
 
 .features-block {
+	display: flex;
+	justify-content: space-around;
+	height: 330px;
 }
+
+.features-block:last-of-type {
+	align-items: center;
+	height: 260px;
+	
+	background-color: #e9e9e9;
+}
+
+.features-block:last-of-type .card-num::after,
+.features-block:last-of-type .card-num::before  {
+	background:black;
+}
+
+.features-block .feature-card {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 70px;
+	height: 150px;
+	width: 300px;
+	
+	color: black;
+}
+
+.features-block:last-of-type .feature-card {
+	justify-content: center;
+	margin: 0;
+	height: 200px;
+}
+
+.features-block:last-of-type .feature-card > * {
+	margin: 10px;
+}
+
 .card-icon {
+	margin-top: 50px;
 }
+
 .main-hotels {
 }
 .hotels-title {
