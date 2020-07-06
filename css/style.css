@@ -127,19 +127,31 @@ img {
 	content: "";
 }
 
+.hotels-logo,
 .main-logo {
+	position: relative;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	position: relative;
-
 	height: 510px;
 
 	background-image: url("../img/main/bg-main.jpg");
 	background-position: 0 -80px;
 	background-repeat: no-repeat;
 	background-size: 100%;
+}
+
+.hotels-logo-wrapper {
+	overflow: hidden;
+}
+
+.hotels-logo {
+	margin: -10px;
+	height: 310px;
+
+	background-position: 0 -300px;
+	filter: blur(10px);
 }
 
 .decorative-arrows {
@@ -618,7 +630,7 @@ img {
 }
 
 .footer-author:active .author-name {
-	color: #BDBBBC;
+	color: #bdbbbc;
 }
 
 .modal-show-animation {
