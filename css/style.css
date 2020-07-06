@@ -127,15 +127,6 @@ img {
 	content: "";
 }
 
-.list-item-left {
-}
-
-.list-item-right {
-}
-
-.main {
-}
-
 .main-logo {
 	display: flex;
 	justify-content: center;
@@ -300,9 +291,6 @@ img {
 
 	background: white;
 	content: "";
-}
-
-.card-text {
 }
 
 .feature-img {
@@ -544,10 +532,6 @@ img {
 	justify-content: center;
 	height: 25px;
 	width: 25px;
-}
-
-.footer-author {
-
 }
 
 .author-text {
