@@ -390,6 +390,19 @@ img {
 	outline: none;
 }
 
+.hotels-btn:hover,
+.hotels-btn:focus {
+	background-color: #604e43;
+}
+
+.hotels-btn:active {
+	background-color: #503e33;
+}
+
+.hotels-btn:active p {
+	opacity: 0.3;
+}
+
 .form-wrapper {
 	position: absolute;
 	top: 0;
@@ -437,7 +450,17 @@ img {
 	width: 345px;
 	border: none;
 
+	background-color: #f2f2f2;
+}
+
+.line-input:hover {
 	background-color: #ebebeb;
+}
+
+.line-input:focus {
+	outline: auto;
+
+	background-color: #ffffff;
 }
 
 .form-line:last-of-type .line-input {
@@ -466,11 +489,46 @@ img {
 	text-transform: uppercase;
 	font-family: "ptsansbold", Arial, sans-serif;
 
-	background-color: #81b3d2;
-
 	cursor: pointer;
 	border: none;
 	outline: none;
+}
+
+.submit-btn p {
+	margin: 0;
+	padding: 0;
+}
+
+.path-hole,
+.footer-socials a,
+.submit-btn {
+	background-color: #81b3d2;
+	fill: #81b3d2;
+}
+
+.footer-socials a:hover .path-hole,
+.footer-socials a:hover,
+.submit-btn:hover {
+	background-color: #669ec0;
+	fill: #669ec0;
+}
+
+.footer-socials a:active,
+.footer-socials a:active .path-hole,
+.submit-btn:active {
+	background-color: #5496bd;
+}
+
+.path-background {
+	fill: #ffffff;
+}
+
+.footer-socials a:active .path-background {
+	opacity: 0.3;
+}
+
+.submit-btn:active p {
+	opacity: 0.3;
 }
 
 .main-map {
@@ -524,8 +582,6 @@ img {
 	justify-content: center;
 	height: 45px;
 	width: 45px;
-
-	background: #81b3d2;
 }
 
 .social-link {
@@ -536,21 +592,41 @@ img {
 	width: 25px;
 }
 
+.author-link {
+	display: flex;
+
+	text-decoration: none;
+	color: black;
+}
+
 .author-text {
 	margin-right: 10px;
 }
 
 .author-name {
 	font-family: "ptsansbold", Arial, sans-serif;
-	color: black;
+
+	text-decoration: underline;
+}
+
+.footer-author:hover {
+	cursor: pointer;
+}
+
+.footer-author:hover .author-name {
+	color: #81b3d2;
+}
+
+.footer-author:active .author-name {
+	color: #BDBBBC;
 }
 
 .modal-show-animation {
-	animation: showup 0.3s;
+	animation: showup 0.5s;
 }
 
 .modal-hide-animation {
-	animation: showdown 0.3s;
+	animation: showdown 0.5s;
 }
 
 @keyframes showup {

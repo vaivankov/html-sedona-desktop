@@ -8,14 +8,14 @@
         modalHotels.style.display = "none";
         modalHotels.classList.remove("modal-hide-animation");
         modalHotels.classList.remove("modal-show-animation")
-      }, 300);
+      }, 400);
     } else {
       modalHotels.style.display = "block";
       modalHotels.classList.add("modal-show-animation");
       setTimeout(() => {
         modalHotels.classList.remove("modal-hide-animation");
         modalHotels.classList.remove("modal-show-animation")
-      }, 300);      
+      }, 400);      
     };
   }
 })();
