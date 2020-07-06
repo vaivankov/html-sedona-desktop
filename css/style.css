@@ -542,3 +542,7 @@ img {
 	font-family: "ptsansbold", Arial, sans-serif;
 	color: black;
 }
+
+.hide{
+	display: none;
+}
