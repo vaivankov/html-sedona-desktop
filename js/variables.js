@@ -1,4 +1,4 @@
 'use strict';
 
-window.btnHotels = document.querySelector('.hotels-btn');
-window.modalHotels = document.querySelector('.form');
+window.btnHotels = document.querySelector('.index-btn');
+window.modalHotels = document.querySelector('.index-form');

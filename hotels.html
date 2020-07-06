@@ -11,29 +11,38 @@
 
 <body>
 
-  <div class="container">
+  <div class="main-container">
 
     <header class="header">
-      <nav class="main-navigation">
-        <ul class="navigation-list">
-          <li class="list-item-left"><a href="#">Информация</a></li>
-          <li class="list-item-left"><a href="#">Фото и видео</a></li>
-          <li class="navigation-logo">
-            <p class="visually-hidden"><a href="index.html">Главная</a></p>
-          </li>
-          <li class="list-item-right"><a href="#">Карта штата</a></li>
-          <li class="list-item-right"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="inner-container">
+        <nav class="main-navigation">
+          <ul class="navigation-list">
+            <li class="list-item-left"><a href="hotels.html">Гостиницы</a></li>
+            <li class="list-item-left"><a href="#">Карта штата</a></li>
+            <li class="navigation-logo">
+              <p class="visually-hidden"><a href="index.html">Главная</a></p>
+            </li>
+            <li class="list-item-right"><a href="#">Информация</a></li>
+            <li class="list-item-right"><a href="#">Фото и видео</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
 
-      <h1 class="visually-hidden">Сайт туристического городка Sedona</h1>
+      <h1 class="visually-hidden">Поиск отеля</h1>
 
-      <section class="hotels-logo-wrapper">
-        <div class="hotels-logo">
+      <section class="find-hotel">
+        <div class="find-hotel-wrapper">
         </div>
+        <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset>
+            <legend>
+              Инфраструктура
+            </legend>
+          </fieldset>
+        </form>
       </section>
 
     </main>

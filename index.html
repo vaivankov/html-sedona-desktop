@@ -11,20 +11,22 @@
 
 <body>
 
-  <div class="container">
+  <div class="main-container">
 
     <header class="header">
-      <nav class="main-navigation">
-        <ul class="navigation-list">
-          <li class="list-item-left"><a href="#">Информация</a></li>
-          <li class="list-item-left"><a href="#">Фото и видео</a></li>
-          <li class="navigation-logo">
-            <p class="visually-hidden"><a href="index.html">Главная</a></p>
-          </li>
-          <li class="list-item-right"><a href="#">Карта штата</a></li>
-          <li class="list-item-right"><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="inner-container">
+        <nav class="main-navigation">
+          <ul class="navigation-list">
+            <li class="list-item-left"><a href="hotels.html">Гостиницы</a></li>
+            <li class="list-item-left"><a href="#">Карта штата</a></li>
+            <li class="navigation-logo">
+              <a href="index.html"><p class="visually-hidden"> Главная </p></a>
+            </li>
+            <li class="list-item-right"><a href="#">Информация</a></li>
+            <li class="list-item-right"><a href="#">Фото и видео</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -127,7 +129,7 @@
         <p class="hotels-subtitle">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
           гостиниц в Седоне </p>
 
-        <button class="hotels-btn" type="button">
+        <button class="index-btn" type="button">
           <p> Поиск гостиницы в Седоне </p>
         </button>
 
@@ -135,28 +137,28 @@
 
       <section class="main-map">
 
-        <div class="form-wrapper">
-          <form class="form" style="display:block;opacity: 1;" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="form-line">
-              <label class="line-label" for="start-date"> Дата заезда: </label>
-              <input class="line-input" type="date" id="start-date" name="start-date" value="2020-06-10" required>
+        <div class="index-form-wrapper">
+          <form class="index-form" style="display:block;opacity: 1;" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="index-form-line">
+              <label class="index-line-label" for="start-date"> Дата заезда: </label>
+              <input class="index-line-input" type="date" id="start-date" name="start-date" value="2020-06-10" required>
             </div>
-            <div class="form-line">
-              <label class="line-label" for="end-date"> Дата выезда: </label>
-              <input class="line-input" type="date" id="end-date" name="end-date" value="2020-06-18" required>
+            <div class="index-form-line">
+              <label class="index-line-label" for="end-date"> Дата выезда: </label>
+              <input class="index-line-input" type="date" id="end-date" name="end-date" value="2020-06-18" required>
             </div>
-            <div class="form-line">
-              <div class="line-div">
-                <label class="line-label" for="adults-count"> Взрослые: </label>
-                <input class="line-input" type="number" id="adults-count" name="adults" value="2" min="1" max="100"
+            <div class="index-form-line">
+              <div class="index-line-div">
+                <label class="index-line-label" for="adults-count"> Взрослые: </label>
+                <input class="index-line-input" type="number" id="adults-count" name="adults" value="2" min="1" max="100"
                   required>
               </div>
-              <div class="line-div">
-                <label class="line-label" for="children-count"> Дети: </label>
-                <input class="line-input" type="number" id="children-count" name="children" value="1" min="1" max="100">
+              <div class="index-line-div">
+                <label class="index-line-label" for="children-count"> Дети: </label>
+                <input class="index-line-input" type="number" id="children-count" name="children" value="1" min="1" max="100">
               </div>
             </div>
-            <button class="submit-btn" type="submit">
+            <button class="index-submit-btn" type="submit">
               <p> Найти </p>
             </button>
           </form>
