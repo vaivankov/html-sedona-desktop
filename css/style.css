@@ -679,7 +679,7 @@ img {
 	height: 220px;
 	width: 100%;
 
-	background-image: url("../img/main/bg-main.jpg");
+	background-image: url("../img/main/bg-main-blur.jpg");
 	background-position: 0 -300px;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -696,9 +696,6 @@ img {
 
 .find-hotel-form fieldset {
 	border: none;
-}
-
-.find-hotel-wrapper {
 }
 
 .checkbox-indicator {
@@ -785,6 +782,7 @@ img {
 }
 
 .price-slider-wrapper {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	margin-top: 25px;
@@ -868,11 +866,35 @@ img {
 }
 
 .price-slider input::-webkit-slider-thumb {
+	position: absolute;
+	top: -7px;
+	left: 0;
+	transform: scale(1.5);
+
 	pointer-events: all;
+}
+
+.price-slider input::-webkit-slider-runnable-track {
 	position: relative;
-	z-index: 2;
-	outline: 0;
+
+	height: 2px;
+	border: none;
+
+	background-color: #fff;
+}
+
+.price-submit-wrapper {
+	display: flex;
+	justify-content: center;
 }
 
 .price-submit {
+	margin-top: 15px;
+	padding: 8px 30px;
+	border: 2px solid #ffffff;
+
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: transparent;
 }
