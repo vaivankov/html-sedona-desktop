@@ -19,3 +19,5 @@
     };
   }
 })();
+
+btnHotels.addEventListener("click", toggleModalWindow);

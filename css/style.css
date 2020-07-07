@@ -724,8 +724,7 @@ img {
 }
 
 .accommodation {
-	margin-right: initial;
-	flex-grow: 1;
+	margin-right: auto;
 }
 
 .accommodation label,
@@ -761,7 +760,7 @@ img {
 
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::after,
 .infrastructure input[type="checkbox"]:checked + .checkbox-indicator::after {
-	top: 6px;
+	top: 5px;
 	left: 6px;
 
 	width: 23px;
@@ -769,7 +768,7 @@ img {
 
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::before,
 .infrastructure input[type="checkbox"]:checked + .checkbox-indicator::before {
-	transform: rotate(45deg);
+	transform: rotate(40deg);
 }
 
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::after,
@@ -785,7 +784,7 @@ img {
 	font-family: "ptsansbold", Arial, sans-serif;
 }
 
-.price-slider {
+.price-slider-wrapper {
 	margin: 0;
 	padding: 0;
 	margin-top: 25px;
@@ -834,7 +833,7 @@ img {
 
 .price-input {
 	display: flex;
-	justify-content: center
+	justify-content: center;
 }
 
 .price-input input {
@@ -852,6 +851,27 @@ img {
 }
 
 .price-slider {
+	position: relative;
+
+	height: 40px;
+}
+
+.price-slider input {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+
+	width: 100%;
+
+	pointer-events: none;
+}
+
+.price-slider input::-webkit-slider-thumb {
+	pointer-events: all;
+	position: relative;
+	z-index: 2;
+	outline: 0;
 }
 
 .price-submit {

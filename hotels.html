@@ -76,21 +76,21 @@
                 Апартаменты
               </label>
             </fieldset>
-            <fieldset class="price-slider">
+            <fieldset class="price-slider-wrapper">
               <legend class="price-title">Стоимость в рублях (&#8381;):</legend>
               <div class="price-input-wrapper">
                 <div class="price-input">
-                  <label for="price-input-min">От</label>
-                  <input value="1000" min="1000" max="10000" step="1000" type="number" id="price-input-min" oninput="">
+                  <label for="price-min">От</label>
+                  <input value="1000" name="price-min" min="1000" max="10000" step="500" type="number" id="price-min">
                 </div>
                 <div class="price-input">
-                  <label for="price-input-max">До</label>
-                  <input value="10000" min="1000" max="10000" step="1000" type="number" id="price-input-max" oninput="">
+                  <label for="price-max">До</label>
+                  <input value="10000" name="price-max" min="1000" max="10000" step="500" type="number" id="price-max">
                 </div>
               </div>
               <div class="price-slider">
-                <input value="0" min="0" max="10000" step="500" type="range" oninput="">
-                <input value="10000" min="0" max="10000" step="500" type="range" oninput="">
+                <input class="price-slider-min" value="0" min="0" max="10000" step="500" type="range">
+                <input class="price-slider-max" value="10000" min="0" max="10000" step="500" type="range">
               </div>
               <button class="price-submit" type="submit">Показать</button>
             </fieldset>
@@ -148,6 +148,14 @@
     </footer>
 
   </div>
+
+  <script src="js/variables.js"></script>
+  <script src="js/func__syncSliderValuesHandler.js"></script>
+  <script src="js/func__syncInputValuesHandler.js"></script>
+  <script src="js/func__syncMinSliderNMinInputHandler.js"></script>
+  <script src="js/func__syncMaxSliderNMaxInputHandler.js"></script>
+  <script src="js/func__syncMaxInputNMaxSliderHandler.js"></script>
+  <script src="js/func__syncMinInputNMinSliderHandler.js"></script>
 
 </body>
 
