@@ -37,10 +37,51 @@
         <div class="find-hotel-wrapper">
         </div>
         <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
-            <legend>
-              Инфраструктура
+          <fieldset class="infrastructure">
+            <legend class="infrastructure-title">
+              Инфраструктура:
             </legend>
+            <label for="infrastructure-pool">
+              <input type="checkbox" name="infrastructure-pool" id="infrastructure-pool" checked>
+              Бассейн
+            </label>
+            <label for="infrastructure-parking">
+              <input type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
+              Парковка
+            </label>
+            <label for="infrastructure-wifi">
+              <input type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
+              Wi-Fi
+            </label>
+          </fieldset>
+          <fieldset class="accommodation">
+            <legend class="accommodation-title">
+              Тип жилья:
+            </legend>
+            <label for="accommodation-hotel">
+              <input type="checkbox" name="accommodation-hotel" id="accommodation-hotel" checked>
+              Гостиница
+            </label>
+            <label for="accommodation-motel">
+              <input type="checkbox" name="accommodation-motel" id="accommodation-motel" checked>
+              Мотель
+            </label>
+            <label for="accommodation-apartment">
+              <input type="checkbox" name="accommodation-apartment" id="accommodation-apartment" checked>
+              Апартаменты
+            </label>
+          </fieldset>
+          <fieldset class="find-hotel-slider">
+            <p>Стоимость в рублях (&#8381;):</p>
+            <div class="price-input">
+              <input value="0" min="0" max="10000" type="number" oninput="">
+              <input value="10000" min="0" max="10000" type="number" oninput="">
+            </div>
+            <div class="price-slider">
+              <input value="0" min="0" max="10000" step="500" type="range" oninput="">
+              <input value="10000" min="0" max="10000" step="500" type="range" oninput="">
+            </div>
+            <button class="find-hotel-submit" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
