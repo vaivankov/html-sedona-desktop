@@ -78,9 +78,15 @@
             </fieldset>
             <fieldset class="price-slider">
               <legend class="price-title">Стоимость в рублях (&#8381;):</legend>
-              <div class="price-input">
-                <input value="0" min="0" max="10000" type="number" oninput="">
-                <input value="10000" min="0" max="10000" type="number" oninput="">
+              <div class="price-input-wrapper">
+                <div class="price-input">
+                  <label for="price-input-min">От</label>
+                  <input value="1000" min="1000" max="10000" step="1000" type="number" id="price-input-min" oninput="">
+                </div>
+                <div class="price-input">
+                  <label for="price-input-max">До</label>
+                  <input value="10000" min="1000" max="10000" step="1000" type="number" id="price-input-max" oninput="">
+                </div>
               </div>
               <div class="price-slider">
                 <input value="0" min="0" max="10000" step="500" type="range" oninput="">

@@ -786,15 +786,69 @@ img {
 }
 
 .price-slider {
+	margin: 0;
+	padding: 0;
 	margin-top: 25px;
+	width: 320px;
 }
 
 .price-title {
+	margin-bottom: 10px;
+
 	font-size: 16px;
 	font-family: "ptsansbold", Arial, sans-serif;
 }
 
+.price-input-wrapper {
+	position: relative;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 35px;
+
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+}
+
+.price-input-wrapper input {
+	color: white;
+	border: none;
+
+	background-color: transparent;
+}
+
+.price-input-wrapper::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	height: 20px;
+	width: 2px;
+
+	background-color: #ffffff;
+
+	content: "";
+}
+
 .price-input {
+	display: flex;
+	justify-content: center
+}
+
+.price-input input {
+	position: relative;
+	left: 10px;
+
+	width: 60px;
+
+	text-align: center;
+}
+
+.price-input label {
+	position: relative;
+	left: 10px;
 }
 
 .price-slider {
