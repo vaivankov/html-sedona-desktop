@@ -17,11 +17,9 @@
       <div class="inner-container">
         <nav class="main-navigation">
           <ul class="navigation-list">
-            <li class="list-item-left"><a href="hotels.html">Гостиницы</a></li>
-            <li class="list-item-left"><a href="#">Карта штата</a></li>
-            <li class="navigation-logo">
-              <p class="visually-hidden"><a href="index.html">Главная</a></p>
-            </li>
+            <li class="list-item-left"><a href="index.html">Главная</a></li>
+            <li class="list-item-left"><a class="navigation-active">Гостиницы</a></li>
+            <li class="navigation-logo"></li>
             <li class="list-item-right"><a href="#">Информация</a></li>
             <li class="list-item-right"><a href="#">Фото и видео</a></li>
           </ul>
@@ -43,18 +41,20 @@
               <legend class="infrastructure-title">
                 Инфраструктура:
               </legend>
-              <label for="infrastructure-pool">
-                <input type="checkbox" name="infrastructure-pool" id="infrastructure-pool" checked>
+              <label>
+                <input class="visually-hidden" type="checkbox" name="infrastructure-pool" id="infrastructure-pool"
+                  checked>
                 <span class="checkbox-indicator"></span>
                 Бассейн
               </label>
-              <label for="infrastructure-parking">
-                <input type="checkbox" name="infrastructure-parking" id="infrastructure-parking">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="infrastructure-parking"
+                  id="infrastructure-parking">
                 <span class="checkbox-indicator"></span>
                 Парковка
               </label>
-              <label for="infrastructure-wifi">
-                <input type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="infrastructure-wifi" id="infrastructure-wifi">
                 <span class="checkbox-indicator"></span>
                 Wi-Fi
               </label>
@@ -64,18 +64,21 @@
               <legend class="accommodation-title">
                 Тип жилья:
               </legend>
-              <label for="accommodation-hotel">
-                <input type="checkbox" name="accommodation-hotel" id="accommodation-hotel" checked>
+              <label>
+                <input class="visually-hidden" type="checkbox" name="accommodation-hotel" id="accommodation-hotel"
+                  checked>
                 <span class="checkbox-indicator"></span>
                 Гостиница
               </label>
-              <label for="accommodation-motel">
-                <input type="checkbox" name="accommodation-motel" id="accommodation-motel" checked>
+              <label>
+                <input class="visually-hidden" type="checkbox" name="accommodation-motel" id="accommodation-motel"
+                  checked>
                 <span class="checkbox-indicator"></span>
                 Мотель
               </label>
-              <label for="accommodation-apartment">
-                <input type="checkbox" name="accommodation-apartment" id="accommodation-apartment" checked>
+              <label>
+                <input class="visually-hidden" type="checkbox" name="accommodation-apartment"
+                  id="accommodation-apartment" checked>
                 <span class="checkbox-indicator"></span>
                 Апартаменты
               </label>
@@ -116,13 +119,26 @@
           </div>
           <div class="result-sort">
             <span class="sort-title">Сортировка:</span>
-            <span class="sort-by sort-by--active">По цене</span>
-            <span class="sort-by">По типу</span>
-            <span class="sort-by">По рейтингу</span>
+            <button class="sort-by sort-by--active">По цене</button>
+            <button class="sort-by">По типу</button>
+            <button class="sort-by">По рейтингу</button>
           </div>
           <div class="sort-direction">
-            <div class="arrow-up"></div>
-            <div class="arrow-down"></div>
+            <div class="arrow-up">
+              <button type="button">
+                <svg height="12" width="12" viewBox="0 0 512 512">
+                  <path d="M508 427L283 53a31 31 0 00-54 0L4 427c-12 21 3 47 27 47h450c24 0 39-26 27-47z" />
+                </svg>
+              </button>
+            </div>
+            <div class="arrow-down arrow--active">
+              <button type="button">
+                <svg height="12" width="12" viewBox="0 0 512 512">
+                  <path
+                    d="M 508,84.231546 283,458.23155 a 31,31 0 0 1 -54,0 L 4,84.231546 c -12,-21 3,-47 27,-47 h 450 c 24,0 39,26 27,47 z" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -228,7 +244,7 @@
       <div class="footer-socials">
         <a href="#">
           <div class="social-link">
-            <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" alt="Иконка Твиттер">
+            <svg height="25" width="25" viewBox="0 0 512 512" alt="Иконка Твиттер">
               <defs />
               <path class="path-background"
                 d="M512 97c-19 9-39 14-60 17 21-13 38-34 46-58-21 12-43 20-67 25a105 105 0 00-179 96c-87-4-164-46-216-110a106 106 0 0032 140c-17 0-34-5-48-13v2c0 51 37 93 85 103a105 105 0 01-48 1c14 42 52 73 98 74A211 211 0 010 417c46 30 102 47 161 47a297 297 0 00298-312c21-15 39-34 53-55z" />
@@ -237,7 +253,7 @@
         </a>
         <a href="#">
           <div class="social-link">
-            <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" alt="Иконка Facebook">
+            <svg height="25" width="25" viewBox="0 0 512 512" alt="Иконка Facebook">
               <defs />
               <path class="path-background"
                 d="M320 85h64c6 0 11-4 11-10V11c0-6-5-11-11-11h-64c-65 0-117 53-117 117v75h-75c-6 0-11 5-11 11v64c0 6 5 10 11 10h75v224c0 6 4 11 10 11h64c6 0 11-5 11-11V277h75c4 0 8-3 10-7l21-64a11 11 0 00-10-14h-96v-75c0-17 14-32 32-32z" />
@@ -246,7 +262,7 @@
         </a>
         <a href="#">
           <div class="social-link">
-            <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48" alt="Иконка YouTube">
+            <svg height="25" width="25" viewBox="0 0 68 48" alt="Иконка YouTube">
               <defs />
               <path class="path-background"
                 d="M66.5 7.7c-.8-2.9-2.5-5.4-5.4-6.2C55.8.1 34 0 34 0S12.2.1 6.9 1.6c-3 .7-4.6 3.2-5.4 6.1a89.6 89.6 0 000 32.5c.8 3 2.5 5.5 5.4 6.3C12.2 47.9 34 48 34 48s21.8-.1 27.1-1.6c3-.7 4.6-3.2 5.4-6.1C68 35 68 24 68 24s0-11-1.5-16.3z" />

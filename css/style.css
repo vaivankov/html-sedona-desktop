@@ -22,7 +22,7 @@
 	font-weight: bold;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
 	position: absolute;
 
 	width: 1px;
@@ -108,6 +108,10 @@ img {
 	text-decoration: none;
 }
 
+.navigation-list a.navigation-active {
+	color: #00000090;
+}
+
 .navigation-logo {
 	position: relative;
 
@@ -141,6 +145,7 @@ img {
 	height: 510px;
 
 	background-image: url("../img/main/bg-main.jpg");
+	background-color: lightgray;
 	background-position: 0 -80px;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -474,6 +479,7 @@ img {
 	width: 20px;
 
 	background-image: url(../img/icon/calendar.svg);
+	background-color: lightgray;
 
 	cursor: pointer;
 }
@@ -496,11 +502,6 @@ img {
 	outline: none;
 }
 
-.index-submit-btn p {
-	margin: 0;
-	padding: 0;
-}
-
 .path-hole,
 .footer-socials a,
 .index-submit-btn {
@@ -510,7 +511,10 @@ img {
 
 .footer-socials a:hover .path-hole,
 .footer-socials a:hover,
-.index-submit-btn:hover {
+.footer-socials a:focus .path-hole,
+.footer-socials a:focus,
+.index-submit-btn:hover,
+.index-submit-btn:focus {
 	background-color: #669ec0;
 	fill: #669ec0;
 }
@@ -536,6 +540,7 @@ img {
 	height: 475px;
 
 	background-image: url("../img/main/map.jpg");
+	background-color: lightgray;
 	background-position: center;
 }
 
@@ -612,10 +617,14 @@ img {
 	cursor: pointer;
 }
 
+.hotel-name h2:hover,
+.navigation-list a[href]:hover,
 .footer-author:hover .author-name {
 	color: #81b3d2;
 }
 
+.hotel-name h2:active,
+.navigation-list a[href]:active,
 .footer-author:active .author-name {
 	color: #bdbbbc;
 }
@@ -675,6 +684,7 @@ img {
 	width: 100%;
 
 	background-image: url("../img/main/bg-main-blur.jpg");
+	background-color: lightgray;
 	background-position: 0 -300px;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -729,11 +739,6 @@ img {
 	cursor: pointer;
 }
 
-.accommodation input,
-.infrastructure input {
-	display: none;
-}
-
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::before,
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::after,
 .infrastructure input[type="checkbox"]:checked + .checkbox-indicator::before,
@@ -748,6 +753,25 @@ img {
 	background-color: #ffffff;
 
 	content: "";
+}
+
+.accommodation input[type="checkbox"]:focus + .checkbox-indicator,
+.infrastructure input[type="checkbox"]:focus + .checkbox-indicator {
+	border: 2px solid #000000;
+}
+
+.accommodation input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.accommodation input[type="checkbox"]:disabled + .checkbox-indicator::after,
+.infrastructure input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.infrastructure input[type="checkbox"]:disabled + .checkbox-indicator::after {
+	background-color: #ffffff30;
+}
+
+.accommodation input[type="checkbox"]:disabled + .checkbox-indicator,
+.accommodation input[type="checkbox"]:disabled + .checkbox-indicator,
+.infrastructure input[type="checkbox"]:disabled + .checkbox-indicator,
+.infrastructure input[type="checkbox"]:disabled + .checkbox-indicator {
+	border: 2px solid #ffffff30;
 }
 
 .accommodation input[type="checkbox"]:checked + .checkbox-indicator::after,
@@ -869,6 +893,10 @@ img {
 	pointer-events: all;
 }
 
+.price-slider input::-webkit-slider-thumb:hover {
+	transform: scale(2);
+}
+
 .price-slider input::-webkit-slider-runnable-track {
 	position: relative;
 
@@ -886,12 +914,19 @@ img {
 .price-submit {
 	margin-top: 15px;
 	padding: 8px 30px;
-	border: 2px solid #ffffff;
 
+	border: 2px solid #ffffff;
+	border-radius: 4px;
 	color: #ffffff;
 	text-transform: uppercase;
 
 	background-color: transparent;
+}
+
+.price-submit:hover {
+	color: black;
+
+	background-color: #ffffff;
 }
 
 .results-header {
@@ -925,8 +960,18 @@ img {
 	margin-right: 30px;
 
 	color: #bdbbbc;
+	background: none;
+	border: none;
 	text-decoration: underline;
 	text-decoration-style: dotted;
+}
+
+.sort-by:hover {
+	color: #81b3d2;
+}
+
+.sort-by:active:not(.sort-by--active) {
+	color: #000000;
 }
 
 .sort-by--active {
@@ -940,16 +985,25 @@ img {
 	width: 35px;
 }
 
-.arrow-up {
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid #81b3d288;
+.arrow-up button,
+.arrow-down button {
+	background: none;
+
+	border: none;
 }
 
+.arrow-up,
 .arrow-down {
-	border-top: 10px solid #76b6df;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+	fill: #81b3d288;
+}
+
+.arrow--active {
+	fill: #76b6df;
+}
+
+.arrow-up:hover,
+.arrow-down:hover {
+	fill: #000000;
 }
 
 .hotel-card {
@@ -983,6 +1037,7 @@ img {
 }
 
 .hotel-name h2 {
+	display: inline-block;
 	margin: 0;
 	margin-bottom: 10px;
 }
