@@ -1028,7 +1028,10 @@ img {
 .hotel-preview {
 	display: flex;
 	align-items: center;
-	width: 165px;
+	margin-right: 25px;
+	width: 140px;
+
+	background-color: #bebebe;
 }
 
 .hotel-preview img {
