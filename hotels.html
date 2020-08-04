@@ -97,8 +97,11 @@
                 </div>
               </div>
               <div class="price-slider">
-                <input class="price-slider-min" value="0" min="0" max="10000" step="500" type="range">
-                <input class="price-slider-max" value="10000" min="0" max="10000" step="500" type="range">
+                <div class="slider-track" style="--left-value: 1000; --right-value: 8000; --min: 0; --max: 10000;"></div>
+                <label class="visually-hidden" for="left-value">Минимальная цена</label>
+                <input class="price-slider-min" id="left-value" value="1000" min="0" max="10000" step="500" type="range">
+                <label class="visually-hidden" for="right-value">Минимальная цена</label>
+                <input class="price-slider-max" id="right-value" value="8000" min="0" max="10000" step="500" type="range">
               </div>
               <div class="price-submit-wrapper">
                 <button class="price-submit" type="submit">Показать</button>

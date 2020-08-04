@@ -1,13 +1,3 @@
-/*
-	Порядок сортировки CSS свойств
-	1. Позиционирование
-	2. Блочная модель
-	3. Типографика
-	4. Оформление
-	5. Анимация
-	6. Разное
-*/
-
 @font-face {
 	font-family: "ptsans";
 	src: url(../fonts/ptsans.woff);
@@ -1142,4 +1132,118 @@ img {
 	color: #766357;
 
 	background-color: #f0f0f0;
+}
+
+.slider-track {
+	position: absolute;
+
+	width: 85%;
+	height: 4px;
+
+	background-color: #ffffff40;
+
+	z-index: 2;
+}
+
+.slider-track {
+	--filler-width: calc(var(--max) - var(--min));
+}
+
+.slider-track::before,
+.slider-track::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 4px;
+
+	background: #ffffff;
+
+	content: "";
+	z-index: 4;
+}
+
+.slider-track::before {
+	margin-left: calc(
+		(var(--left-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--right-value) - var(--left-value)) / var(--filler-width) * 100%
+	);
+}
+
+.slider-track::after {
+	margin-left: calc(
+		(var(--right-value) - var(--min)) / var(--filler-width) * 100%
+	);
+	width: calc(
+		(var(--left-value) - var(--right-value)) / var(--filler-width) * 100%
+	);
+}
+
+input[type="range"] {
+	margin: 0;
+
+	font: inherit;
+
+	background: none;
+
+	pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"] {
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	position: relative;
+
+	height: 4px;
+	width: 100%;
+
+	background: none;
+	background-color: #ffffff40;
+}
+
+input[type="range"]::-moz-range-track {
+	position: relative;
+
+	height: 4px;
+	width: 100%;
+
+	background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
+}
+
+input[type="range"]::-moz-range-thumb {
+	position: absolute;
+	top: -9px;
+	left: 0;
+
+	width: 20px;
+	height: 23px;
+
+	background-image: url("../svg//filter-button.svg");
+	border: none;
+	border-radius: 0;
+
+	pointer-events: auto;
+	z-index: 9;
 }
