@@ -1,9 +1,10 @@
 'use strict';
 
 (function () {
-  window.syncMaxInputNMaxSliderHandler = function () {
-    sliderMax.value = priceInputMax.value;
+  window.syncMaxInputNMaxSlider = function () {
+    sliderPriceMax.value = inputPriceMax.value;
+    syncSliderValues.call(sliderPriceMax, sliderPriceMax);
   }
 })();
 
-priceInputMax.addEventListener("input", syncMaxInputNMaxSliderHandler);
+inputPriceMax.addEventListener("input", syncMaxInputNMaxSlider);

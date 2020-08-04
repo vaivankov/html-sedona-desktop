@@ -468,7 +468,7 @@ img {
 	height: 20px;
 	width: 20px;
 
-	background-image: url(../img/icon/calendar.svg);
+	background-image: url(../svg/calendar.svg);
 
 	cursor: pointer;
 }
@@ -866,33 +866,10 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	transform: translate(0, -50%);
 
 	width: 100%;
 
 	pointer-events: none;
-}
-
-.price-slider input::-webkit-slider-thumb {
-	position: absolute;
-	top: -7px;
-	left: 0;
-	transform: scale(1.5);
-
-	pointer-events: all;
-}
-
-.price-slider input::-webkit-slider-thumb:hover {
-	transform: scale(2);
-}
-
-.price-slider input::-webkit-slider-runnable-track {
-	position: relative;
-
-	height: 2px;
-	border: none;
-
-	background-color: #fff;
 }
 
 .price-submit-wrapper {
@@ -1136,11 +1113,11 @@ img {
 
 .slider-track {
 	position: absolute;
+	top: 50%;
+	left: 0;
 
-	width: 85%;
+	width: 100%;
 	height: 4px;
-
-	background-color: #ffffff40;
 
 	z-index: 2;
 }
@@ -1224,7 +1201,7 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 20px;
 	height: 23px;
 
-	background-image: url("../svg//filter-button.svg");
+	background-image: url("../svg/filter-button.svg");
 	border: none;
 	border-radius: 0;
 
@@ -1240,7 +1217,7 @@ input[type="range"]::-moz-range-thumb {
 	width: 20px;
 	height: 23px;
 
-	background-image: url("../svg//filter-button.svg");
+	background-image: url("../svg/filter-button.svg");
 	border: none;
 	border-radius: 0;
 

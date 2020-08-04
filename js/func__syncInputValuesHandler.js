@@ -2,21 +2,15 @@
 
 (function () {
   window.syncInputValuesHandler = function () {
-    let priceInputMinValue = +priceInputMin.value ,
-      priceInputMaxValue = +priceInputMax.value ;
-    if (priceInputMinValue > priceInputMaxValue) {
-      priceInputMin.value = priceInputMaxValue;
-      syncMinInputNMinSliderHandler();
-      syncMinSliderNMinInputHandler();
-      return;
-    }
-    if (priceInputMaxValue <= priceInputMinValue) {
-      priceInputMax.value = priceInputMinValue;
-      syncMaxInputNMaxSliderHandler();
-      return;
-    }
+    let input = this;
+    let sliderWrapper = input.closest(".price-slider-wrapper");
+    let sliderThumb = sliderWrapper.querySelector(`.price-slider-${this.dataset.position}`);
+    let sliderTrack = sliderWrapper.querySelector(".slider-track");
+
+    sliderTrack.style.setProperty(`--${sliderThumb.id}`, +sliderThumb.value);
+
   }
 })();
 
-priceInputMin.addEventListener("input", syncInputValuesHandler);
-priceInputMax.addEventListener("input", syncInputValuesHandler);
+inputPriceMin.addEventListener("change", syncInputValuesHandler);
+inputPriceMax.addEventListener("change", syncInputValuesHandler);

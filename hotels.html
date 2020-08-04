@@ -89,11 +89,11 @@
               <div class="price-input-wrapper">
                 <div class="price-input">
                   <label for="price-min">От</label>
-                  <input value="1000" name="price-min" min="1000" max="10000" step="500" type="number" id="price-min">
+                  <input class="price-input-min" data-position="min" value="1000" name="price-min" min="0" max="10000" step="500" type="number" id="price-min">
                 </div>
                 <div class="price-input">
                   <label for="price-max">До</label>
-                  <input value="10000" name="price-max" min="1000" max="10000" step="500" type="number" id="price-max">
+                  <input class="price-input-max" data-position="max" value="8000" name="price-max" min="0" max="10000" step="500" type="number" id="price-max">
                 </div>
               </div>
               <div class="price-slider">
@@ -167,10 +167,10 @@
             </div>
             <div class="hotel-rating">
               <div class="rating-stars">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
               </div>
               <div class="rating-text">Рейтинг: 8,5</div>
             </div>
@@ -196,9 +196,9 @@
             </div>
             <div class="hotel-rating">
               <div class="rating-stars">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
               </div>
               <div class="rating-text">Рейтинг: 8,9</div>
             </div>
@@ -224,8 +224,8 @@
             </div>
             <div class="hotel-rating">
               <div class="rating-stars">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
-                <img height="17" width="17" src="img/icon/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
+                <img height="17" width="17" src="svg/star.svg" alt="Звёздочка рейтинга">
               </div>
               <div class="rating-text">Рейтинг: 9,2</div>
             </div>
@@ -289,10 +289,10 @@
   <script src="js/variables.js"></script>
   <script src="js/func__syncSliderValuesHandler.js"></script>
   <script src="js/func__syncInputValuesHandler.js"></script>
-  <script src="js/func__syncMinSliderNMinInputHandler.js"></script>
-  <script src="js/func__syncMaxSliderNMaxInputHandler.js"></script>
   <script src="js/func__syncMaxInputNMaxSliderHandler.js"></script>
+  <script src="js/func__syncMaxPriceSliderNMaxPriceInputHandler.js"></script>
   <script src="js/func__syncMinInputNMinSliderHandler.js"></script>
+  <script src="js/func__syncMinPriceSliderNMinPriceInputHandler.js"></script>
 
 </body>
 

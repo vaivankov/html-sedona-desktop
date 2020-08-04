@@ -2,7 +2,11 @@
 
 window.btnHotels = document.querySelector('.index-btn');
 window.modalHotels = document.querySelector('.index-form');
-window.sliderMin = document.querySelectorAll(".price-slider input")[0];
-window.sliderMax = document.querySelectorAll(".price-slider input")[1];
-window.priceInputMax = document.querySelector("#price-max");
-window.priceInputMin = document.querySelector("#price-min");
+
+window.sliderThumbs = document.querySelectorAll(".price-slider-thumb");
+
+window.inputPriceMin = document.querySelector(".price-input-min");
+window.inputPriceMax = document.querySelector(".price-input-max");
+
+window.sliderPriceMin = document.querySelector(".price-slider-min");
+window.sliderPriceMax = document.querySelector(".price-slider-max");

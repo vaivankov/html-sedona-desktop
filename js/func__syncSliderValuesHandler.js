@@ -2,22 +2,14 @@
 
 (function () {
   window.syncSliderValuesHandler = function () {
-    let sliderMinValue = +sliderMin.value ,
-      sliderMaxValue = +sliderMax.value ;
-    if (sliderMinValue > sliderMaxValue) {
-      sliderMin.value = sliderMaxValue;
-      syncMinSliderNMinInputHandler();
-      syncMinInputNMinSliderHandler();
-      return;
-    }
-    if (sliderMaxValue <= sliderMinValue) {
-      sliderMax.value = sliderMinValue;
-      syncMaxSliderNMaxInputHandler();
-      syncMaxInputNMaxSliderHandler();
-      return;
-    }
+    let sliderThumb = this;
+    let sliderWrapper = sliderThumb.closest(".price-slider");
+    let sliderTrack = sliderWrapper.querySelector(".slider-track");
+
+    sliderTrack.style.setProperty(`--${sliderThumb.id}`, +sliderThumb.value);
+
   }
 })();
 
-sliderMin.addEventListener("input", syncSliderValuesHandler);
-sliderMax.addEventListener("input", syncSliderValuesHandler);
+sliderPriceMin.addEventListener("input", syncSliderValuesHandler);
+sliderPriceMax.addEventListener("input", syncSliderValuesHandler);

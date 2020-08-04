@@ -1,9 +1,10 @@
 'use strict';
 
 (function () {
-  window.syncMinInputNMinSliderHandler = function () {
-    sliderMin.value = priceInputMin.value;
+  window.syncMinInputNMinSlider = function () {
+    sliderPriceMin.value = inputPriceMin.value;
+    syncSliderValues.call(sliderPriceMin, sliderPriceMin);
   }
 })();
 
-priceInputMin.addEventListener("input", syncMinInputNMinSliderHandler);
+inputPriceMin.addEventListener("input", syncMinInputNMinSlider);
