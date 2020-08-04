@@ -139,79 +139,22 @@ img {
 	background-position: 0 -80px;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	
+	overflow: hidden;
+}
+
+.decorative-arrows-wrapper {
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+
+	display: flex;
+	width: calc(100% + 2px);
 }
 
 .decorative-arrows {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-
 	width: 100%;
-	height: 60px;
-}
-
-.arrows-wrapper {
-	position: relative;
-
-	width: 100%;
-	height: 100%;
-}
-
-.arrows {
-	position: absolute;
-
-	width: 100%;
-	height: 100%;
-}
-
-.arrow-outer,
-.arrow-inner {
-	position: relative;
-
-	height: 100%;
-	width: 100%;
-}
-
-.arrow-inner {
-	width: 60%;
-}
-
-.arrow-outer::after,
-.arrow-outer::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-left: 0 solid white;
-	border-right: 600px solid transparent;
-	border-bottom: 60px solid white;
-}
-
-.arrow-outer::after {
-	left: initial;
-	right: 0;
-	border-left: 600px solid transparent;
-	border-right: 0 solid white;
-}
-
-.arrow-inner::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0px;
-	border-left: 0 solid white;
-	border-right: 470px solid transparent;
-	border-bottom: 80px solid white;
-}
-
-.arrow-inner::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 500px;
-	border-right: 0 solid white;
-	border-left: 450px solid transparent;
-	border-bottom: 80px solid white;
 }
 
 .main-features {
