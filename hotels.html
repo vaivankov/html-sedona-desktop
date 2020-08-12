@@ -33,6 +33,8 @@
 
       <section class="find-hotel">
 
+        <h3 class="visually-hidden">Форма сортировки отелей</h3>
+
         <div class="inner-container find-hotel-wrapper">
 
           <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -89,19 +91,24 @@
               <div class="price-input-wrapper">
                 <div class="price-input">
                   <label for="price-min">От</label>
-                  <input class="price-input-min" data-position="min" value="1000" name="price-min" min="0" max="10000" step="500" type="number" id="price-min">
+                  <input class="price-input-min" data-position="min" value="1000" name="price-min" min="0" max="10000"
+                    step="500" type="number" id="price-min">
                 </div>
                 <div class="price-input">
                   <label for="price-max">До</label>
-                  <input class="price-input-max" data-position="max" value="8000" name="price-max" min="0" max="10000" step="500" type="number" id="price-max">
+                  <input class="price-input-max" data-position="max" value="8000" name="price-max" min="0" max="10000"
+                    step="500" type="number" id="price-max">
                 </div>
               </div>
               <div class="price-slider">
-                <div class="slider-track" style="--left-value: 1000; --right-value: 8000; --min: 0; --max: 10000;"></div>
+                <div class="slider-track" style="--left-value: 1000; --right-value: 8000; --min: 0; --max: 10000;">
+                </div>
                 <label class="visually-hidden" for="left-value">Минимальная цена</label>
-                <input class="price-slider-min" id="left-value" value="1000" min="0" max="10000" step="500" type="range">
+                <input class="price-slider-min" id="left-value" value="1000" min="0" max="10000" step="500"
+                  type="range">
                 <label class="visually-hidden" for="right-value">Минимальная цена</label>
-                <input class="price-slider-max" id="right-value" value="8000" min="0" max="10000" step="500" type="range">
+                <input class="price-slider-max" id="right-value" value="8000" min="0" max="10000" step="500"
+                  type="range">
               </div>
               <div class="price-submit-wrapper">
                 <button class="price-submit" type="submit">Показать</button>
