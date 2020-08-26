@@ -45,8 +45,8 @@ html {
 }
 
 body {
-  min-width: 1200px;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
 
   font-weight: 400;
@@ -899,6 +899,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0;
   margin-top: 25px;
@@ -1223,8 +1224,6 @@ img {
 .hotel-order p {
   margin: 0;
 }
-
-
 
 .hotel-info {
   -webkit-box-flex: 1;
